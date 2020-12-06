@@ -1,5 +1,5 @@
 
-![demo](./figma-plugin-demo.gif)
+![demo](./demo.gif)
 
 Below are the steps to get your plugin running. You can also find instructions at:
 
