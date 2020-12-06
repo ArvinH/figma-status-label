@@ -1,0 +1,17 @@
+{
+  "name": "status-label",
+  "version": "1.0.0",
+  "description": "Label status to your design",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "Arvin",
+  "license": "MIT",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.19.0"
+  },
+  "dependencies": {
+    "typescript": "^4.1.2"
+  }
+}

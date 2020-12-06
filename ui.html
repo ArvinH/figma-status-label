@@ -1,0 +1,24 @@
+<h2>Select status label</h2>
+<label for="cars">Choose a status</label>
+
+<select name="status" id="status">
+  <option value="LGTM">LGTM</option>
+  <option value="Working in progress">Working in progress</option>
+  <option value="In Review">In Review</option>
+  <option value="Please Review">Please Review</option>
+</select>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create').onclick = () => {
+  const select = document.getElementById('status');
+  const text = select.options[select.selectedIndex].value;
+  parent.postMessage({ pluginMessage: { type: 'create-label', text } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>
