@@ -41,7 +41,7 @@ figma.ui.onmessage = (msg) => __awaiter(this, void 0, void 0, function* () {
 });
 const colorMap = {
     'LGTM': { r: 0, g: 0.8, b: 0 },
-    'Working in progress': { r: 0.8, g: 0.3, b: 0.1 },
+    'Work in progress': { r: 0.8, g: 0.3, b: 0.1 },
     'In Review': { r: 0.2, g: 0.2, b: 0.6 },
     'Please Review': { r: 0.8, g: 0, b: 0 },
 };
