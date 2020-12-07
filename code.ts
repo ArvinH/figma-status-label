@@ -16,7 +16,7 @@ figma.ui.onmessage = async (msg) => {
   // your HTML page is to use an object with a "type" property like this.
   if (msg.type === 'create-label') {
     const nodes: SceneNode[] = [];
-    await figma.loadFontAsync({ family: "Roboto", style: "Bold" })
+    await figma.loadFontAsync({ family: "Roboto", style: "Bold" });
     
     let group;
     for (const node of figma.currentPage.selection) {
