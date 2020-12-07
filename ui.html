@@ -15,15 +15,13 @@
   }
 </style>
 <script>
+  document.getElementById('create').onclick = () => {
+    const select = document.getElementById('status');
+    const text = select.options[select.selectedIndex].value;
+    parent.postMessage({ pluginMessage: { type: 'create-label', text } }, '*')
+  }
 
-document.getElementById('create').onclick = () => {
-  const select = document.getElementById('status');
-  const text = select.options[select.selectedIndex].value;
-  parent.postMessage({ pluginMessage: { type: 'create-label', text } }, '*')
-}
-
-document.getElementById('cancel').onclick = () => {
-  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
-}
-
+  document.getElementById('cancel').onclick = () => {
+    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+  }
 </script>
